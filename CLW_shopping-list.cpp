@@ -73,7 +73,7 @@ void findItem(char itemName[]) {
 	 printf("查找商品 \"%s\" ：\n", itemName);
 	 while (current != NULL) {
 		 if (strcmp(current->name, itemName) == 0) {
-		 printf("%s - 数量：%d\n", current->name, current->quantity);
+		 printf("%s   数量：%d\n", current->name, current->quantity);
 		 return;
 		 }
 		 current=current->next;
@@ -183,7 +183,7 @@ int main()
 			clearList();
 		}
 		else if(num==6){
-			printf("商品数量是%d\n",totalQuantity());
+			printf("商品总数：d\n",totalQuantity());
 		}
 		else if(num==7){
 			scanf("%s",Name);
@@ -203,7 +203,7 @@ int main()
 			displayList();
 		}
 		else{
-			printf("感谢使用！\n!");
+			printf("感谢使用！\n");
 			break; 
 		}
 		scanf("%d",&num);
