@@ -4,7 +4,7 @@
 struct ShoppingItem {
  char name[50]; // 商品名称
  int quantity; // 商品数量
- struct ShoppingItem* next; // 指针
+ struct ShoppingItem* next; // 指向下一个节点的指针
 };
 struct ShoppingItem* shoppingList = NULL; // 初始化购物清单
 void addItem(char itemName[], int itemQuantity) {
